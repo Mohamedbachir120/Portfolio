@@ -1,0 +1,133 @@
+:root {
+  --scale: 1;
+  --icon-size: 24px;
+  --blue:#1CA7EC;
+  --black:#354046;
+
+}
+.image_me{
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+.image_side{
+    min-height: 35vh !important;
+    background-image: url("Mohamed.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+h1 span{
+    color: #E7A624;
+}
+.floatNav{
+    padding: 5px;
+    border-radius: 18px;
+    position: absolute;
+    background: #E7A624;
+    right: 10px;
+    top: 20vh;
+
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #E7A624; /* or add it to the track */
+  }
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+}
+img{
+    cursor: pointer;
+}
+  
+.fixed{
+    position: fixed;
+    width: 200px !important;
+}
+@media only screen and (min-width: 768px) {
+    .main_content{
+        margin-left: 230px;
+    }
+}
+@media only screen and (max-width: 768px) {
+  .image_section{
+    display: none;
+  }
+  .image_me{
+    width: 100vw;
+    height: auto;
+  }
+
+h1.rounded{
+  font-size: normal;
+}
+
+ 
+}
+
+  
+  .bottom {
+    z-index: 10000 !important;
+    position: fixed;
+    bottom: 0 !important;
+    width: 100%;
+    height: 70px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* border-radius: 20px 20px 0px 0px; */
+    padding: 0 15px;
+    background:  #E7A624;
+    overflow: hidden;
+  }
+  .bottom ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom ul li {
+    list-style: none;
+    width: var(--icon-size);
+    height: var(--icon-size);
+  }
+  .bottom ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  
+  
+  .bottom h5 {
+    font-weight: normal;
+  }
+  .bottom .active h5 {
+    color: var(--blue);
+  }
+  
+  
+  .bottom {
+    font-size: none !important;
+  }
+  #slide_btn{
+    position: absolute;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+  }
+  #slide_btn_left{
+    position: absolute;
+    height: 40px;
+    top: 10px;
+    left: 10px;
+  }

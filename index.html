@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HADJADJI Mohamed Bachir</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <main class="d-flex flex-row">
+    <div class="col-2">
+
+    </div>
+    <section class="text_section col-lg-5  col-md-8 d-flex flex-column justify-content-center align-items-start mt-5 pt-5 me-5">  
+      <div>
+
+        <h2 class="text-left text-dark">
+          HI THERE !
+        </h2>
+        <h1 class="text-left"> 
+          I'M <span class="text-warning"> MOHAMED</span> 
+         </h1>     
+         <div class="bg-warning py-1 rounded px-2" style="max-width: fit-content;">
+          SOFTWARE ENGINEER
+         </div>
+       
+      </div>
+      <p class="bg-light text-left mt-4 py-3 px-2">
+     
+        "What you do makes a difference, and you have to decide what kind of difference you want to make."
+       </p>
+       <h5 class="bg-warning px-3 py-2 mt-4 text-light" style="border-radius: 13px;">
+        <a href="about_me.html" class="text-decoration-none text-light"> MORE ABOUT ME</a>
+       </h5>
+    </section>
+    <section class="col-lg-4 col-md-12 image_section">
+      <img src="Mohamed.jpg" alt="Mohamed"  class="image_me shadow">
+     
+    </section>
+    
+    <button class="d-lg-none d-block btn btn-warning text-light" id="slide_btn">
+      <i class="fas fa-arrow-right"></i>
+
+    </button>
+    <button class="d-lg-none d-none btn btn-warning text-light " id="slide_btn_left">
+      <i class="fas fa-arrow-left"></i>
+
+    </button>
+  </main>
+  <nav  class="floatNav bg-warning p-2">  
+    <div>
+      <a href="#" class="text-light" title="Home" id="home">
+        <i class="fas fa-home"></i> 
+      </a>   
+    </div>
+    <div class="text-center">
+      <a href="#" class="text-secondary"> 
+        <i class="fa-solid fa-ellipsis-vertical fa-xs"></i>
+      </a>
+    </div>
+    <div class="text-center">
+      <a href="about_me.html" class="text-dark"> 
+        <i class="fas fa-user" title="About me"></i>
+      </a>
+    </div>
+    <div class="text-center">
+      <a href="#" class="text-secondary"> 
+        <i class="fa-solid fa-ellipsis-vertical fa-xs"></i>
+      </a>
+    </div>
+    <div class="text-center">
+      <a href="Resume.html" class="text-dark" title="Resume"> 
+        <i class="fa-solid fa-suitcase"></i>
+      </a>
+    </div>
+    <div class="text-center">
+      <a href="#" class="text-secondary"> 
+        <i class="fa-solid fa-ellipsis-vertical fa-xs"></i>
+      </a>
+    </div>
+
+    <div class="text-center">
+      <a href="projects.html" class="text-dark" title="Projects"> 
+        <i class="fa-solid fa-photo-film"></i>
+      </a>
+    </div>
+    <div class="text-center">
+      <a href="#" class="text-secondary"> 
+        <i class="fa-solid fa-ellipsis-vertical fa-xs"></i>
+      </a>
+    </div>
+
+    <div class="text-center">
+      <a href="contact.html" class="text-dark" title="contact"> 
+        <i class="fa-solid fa-paper-plane"></i>
+      </a>
+    </div>
+  </nav>
+  <script>
+
+    $("#slide_btn").on("click",function(){
+      $(this).toggleClass("d-none");
+      $("#slide_btn_left").toggleClass("d-none");
+      $(".text_section").toggleClass("d-none");
+      $(".image_section").fadeToggle("slow");
+
+    });
+
+
+    $("#slide_btn_left").on("click",function(){
+      $(this).toggleClass("d-none");
+      $("#slide_btn").toggleClass("d-none");
+      $(".text_section").toggleClass("d-none");
+      $(".image_section").fadeToggle("slow");
+
+    });
+  </script>
+</body>
+</html>
