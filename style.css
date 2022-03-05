@@ -12,6 +12,12 @@
     top: 0;
 
 }
+.title_main{
+  background: #fdb72a;
+  color: whitesmoke;
+  border-radius: 0 70px 0 70px;
+  margin-bottom: 20px;
+}
 
 a{
     text-decoration: none;
@@ -61,12 +67,15 @@ img{
   .image_section{
     display: none;
   }
+  .text_section{
+    margin-right: 60px !important;
+  }
   .image_me{
     width: 100vw;
     height: auto;
   }
 
-h1.rounded{
+.title_main{
   font-size: normal;
 }
 
